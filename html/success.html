@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Exitosa | Cuervo Barbery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="success-page">
+    <div class="success-container text-center">
+        <div class="success-icon">✔️</div>
+        <h1>¡Pago Exitoso!</h1>
+        <p>Gracias por tu compra en Cuervo Barbery.</p>
+        <p class="mb-4">Hemos enviado los detalles de tu pedido a tu correo electrónico.</p>
+        
+        <div class="order-details-card">
+            <h3>Detalles de la operación</h3>
+            <p><strong>Nº de Pedido:</strong> <span id="order-id"></span></p>
+            <p><strong>Estado:</strong> Aprobado</p>
+        </div>
+        
+        <a href="index.html" class="btn btn-primary mt-4">Volver al Inicio</a>
+    </div>
+
+    <script>
+        // Limpiar el carrito después de la compra exitosa
+        localStorage.removeItem('cuervo_cart');
+        // Generar un ID de orden aleatorio
+        document.getElementById('order-id').innerText = '#' + Math.floor(Math.random() * 1000000);
+    </script>
+</body>
+</html>

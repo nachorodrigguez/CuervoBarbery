@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuervo Barbery | Barbería Clásica y Moderna</title>
+    <meta name="description"
+        content="Cuervo Barbery es una barbería de alto nivel que combina la tradición clásica con tendencias urbanas modernas. Reserva tu turno hoy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Cuervo <span>Barbery</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="cart-icon" id="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                    <div class="cart-dropdown" id="cart-dropdown">
+                        <a href="checkout.html" class="btn btn-primary"
+                            style="padding: 8px 15px; font-size: 0.8rem; width: 100%;">Ir al Checkout</a>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content container">
+            <h1>El Arte del Estilo Masculino</h1>
+            <p>Tradición clásica, actitud moderna. Vive la experiencia Cuervo Barbery.</p>
+            <a href="#contacto" class="btn btn-primary">Reserva tu Turno</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="about section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>La Experiencia Cuervo</h2>
+                <p>En Cuervo Barbery, no solo cortamos cabello; esculpimos estilos. Nuestra barbería es un santuario
+                    diseñado para el hombre moderno que aprecia la atención al detalle, el buen café y la camaradería de
+                    un ambiente exclusivo.</p>
+                <p>Nuestros maestros barberos combinan técnicas tradicionales con las últimas tendencias urbanas para
+                    ofrecerte un servicio inigualable.</p>
+            </div>
+            <div class="about-image">
+                <img src="img/gallery_1.png" alt="Barbero trabajando en corte moderno">
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Trabajos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="img/gallery_1.png" alt="Corte 1"></div>
+                <div class="gallery-item"><img src="img/gallery_1.png" alt="Corte 2" style="filter: hue-rotate(20deg);">
+                </div>
+                <div class="gallery-item"><img src="img/gallery_1.png" alt="Corte 3" style="filter: sepia(0.3);"></div>
+                <div class="gallery-item"><img src="img/gallery_1.png" alt="Corte 4" style="filter: grayscale(80%);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tienda Online -->
+    <section id="tienda" class="shop section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Productos Premium</h2>
+            <div class="shop-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="img/product_wax.png" alt="Cera Mate Cuervo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cera Mate Texturizante</h3>
+                        <p class="price">$25.00</p>
+                        <button class="btn btn-outline add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="img/product_wax.png" alt="Aceite para Barba" style="transform: scale(0.9);">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Esencial para Barba</h3>
+                        <p class="price">$30.00</p>
+                        <button class="btn btn-outline add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="img/product_wax.png" alt="Pomada Clásica" style="filter: brightness(0.8);">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pomada Clásica de Fijación Fuerte</h3>
+                        <p class="price">$22.00</p>
+                        <button class="btn btn-outline add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Reserva y Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Horarios de Atención</h3>
+                    <ul>
+                        <li><strong>Lunes - Viernes:</strong> 9:00 AM - 20:00 PM</li>
+                        <li><strong>Sábados:</strong> 9:00 AM - 14:00 PM</li>
+                        <li><strong>Domingos:</strong> Cerrado</li>
+                    </ul>
+                    <h3>Ubicación</h3>
+                    <p>Av. Avellaneda 4156, San Fernando, Buenos Aires</p>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="tel" placeholder="Teléfono" required>
+                        <select required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="corte">Corte de Cabello</option>
+                            <option value="barba">Arreglo de Barba</option>
+                            <option value="ambos">Corte + Barba</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Solicitar Turno</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cuervo Barbery</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/1234567890?text=Hola,%20quisiera%20reservar%20un%20turno%20en%20Cuervo%20Barbery."
+        class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.4c-33 0-65.4-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.3-186.6 184.3zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
